@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Simulation Semester</title>
+<meta name="description" content="How an introductory philosophy course at Widener University was rebuilt as a fourteen-week story, drafted with Claude, revised by the instructor, and illustrated as comics with Google Gemini.">
+<meta property="og:title" content="The Simulation Semester">
+<meta property="og:description" content="An intro philosophy course taught as a fourteen-week mystery, co-written with Claude and illustrated with Gemini.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://wilkth01.github.io/simulation-semester/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Simulation Semester, home">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2 28.1 9v14L16 30 3.9 23V9z" stroke="#5fe0d3" stroke-width="1.6"/><path d="M16 2v9.5M28.1 9 16 11.5 3.9 9M16 11.5 9.5 22h13zM9.5 22 3.9 23M22.5 22l5.6 1M9.5 22 16 30l6.5-8" stroke="#5fe0d3" stroke-width="1.1" opacity=".7"/></svg>
+      The Simulation Semester
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#idea">The idea</a></li>
+      <li><a href="#build">The build</a></li>
+      <li><a href="#season">The season</a></li>
+      <li><a href="#cast">Cast</a></li>
+      <li><a href="#glitches">Glitches</a></li>
+      <li><a href="#teach">Try it</a></li>
+      <li><a href="episodes.html">Read the episodes</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-wall" aria-hidden="true">
+<!-- HERO:START -->
+    <div class="hero-row"><img src="assets/img/comics/ep01-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep02-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep03-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep04-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep05-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep06-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep07-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep01-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep02-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep03-900.webp" alt="" width="420" height="229" fetchpriority="high"><img src="assets/img/comics/ep04-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep05-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep06-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep07-900.webp" alt="" width="420" height="229" loading="lazy"></div>
+    <div class="hero-row"><img src="assets/img/comics/ep08-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep09-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep10-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep11-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep12-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep13-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep14-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep08-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep09-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep10-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep11-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep12-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep13-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep14-900.webp" alt="" width="420" height="229" loading="lazy"></div>
+    <div class="hero-row"><img src="assets/img/comics/ep05-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep12-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep03-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep09-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep01-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep13-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep07-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep05-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep12-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep03-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep09-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep01-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep13-900.webp" alt="" width="420" height="229" loading="lazy"><img src="assets/img/comics/ep07-900.webp" alt="" width="420" height="229" loading="lazy"></div>
+<!-- HERO:END -->
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="kicker">PHIL 115 &middot; Philosophical Ideas &middot; Widener University</p>
+      <h1>The <span class="glitch" data-text="Simulation">Simulation</span><br>Semester</h1>
+      <p class="lede">An introduction to philosophy taught as a fourteen-week mystery. <strong>I set the readings and themes. Claude helped me build the story. Gemini drew it.</strong> This is how the course was made, and what happened when we taught it.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#build">How it was built
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10m0 0 4-4m-4 4L4 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#season">Browse the 14 episodes</a>
+      </div>
+      <div class="terminal" role="note" aria-label="A message from the Architect">
+        <span class="who">architect@simford:~$</span>
+        <span id="typed" data-lines='["Welcome to Simford University. I am the Architect.","Your observant nature has been noted.","WARNING: Overfitting detected. Please recalibrate expectations.","Thank you for your participation."]'>Welcome to Simford University. I am the Architect.</span><span class="caret" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-meta" aria-hidden="true">
+    <div class="wrap"><span>Spring 2026</span><span>Run 7 &middot; Instances active: 3,482</span></div>
+  </div>
+</section>
+
+<section class="stats" aria-label="The course at a glance">
+  <div class="wrap">
+    <ul>
+      <li><b>14</b><span>weekly episodes, one per week of the semester</span></li>
+      <li><b>14</b><span>comic pages, one for each episode</span></li>
+      <li><b><!-- WORDS -->13,000</b><span>words of story, revised before students read a line</span></li>
+      <li><b>22</b><span>philosophers on the reading list, all read in primary sources</span></li>
+      <li><b>12</b><span>short writing assignments set inside the plot</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ IDEA ============ -->
+<section class="section" id="idea">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The idea</p>
+      <h2>Give students a reason to ask the question before the philosopher answers it.</h2>
+    </div>
+    <div class="idea-grid">
+      <div class="body reveal">
+        <p>Intro courses usually run as a survey: Plato one week, Descartes the next, Hume after that. Students meet each argument cold, and the argument has to earn their interest on its own. For spring 2026 I rebuilt PHIL 115 around a single story instead.</p>
+        <p>Alex Chen, a first-year at Simford University, starts noticing glitches. A squirrel freezes mid-chew for four seconds. A lecture hall stops for everyone except Alex and their roommate. An email from &ldquo;Architect Support&rdquo; arrives with one line: <em>Your observant nature has been noted.</em> Alex spends the semester trying to work out what kind of world this is, and what to do about it.</p>
+        <p>Every episode puts a character in front of the problem that week's reading takes up. Alex asks whether a backup of themself would still be them before anyone opens Locke or Parfit. The friends vote on whether to sacrifice fifty-three people to save 3,482 in the week the class reads Mill. A night-shift janitor turns out to have reported the glitches for two years before any student noticed, and that is the week we read Fricker on testimonial injustice.</p>
+        <p>By the time students reach the primary text, they already care how the argument comes out.</p>
+      </div>
+      <aside class="reveal">
+        <figure class="pull">
+          <blockquote>The story is a vehicle for the philosophy&mdash;but the philosophy is real.</blockquote>
+          <figcaption>From the course introduction page students read on day one</figcaption>
+        </figure>
+        <div class="idea-note">
+          <b>The readings didn't change.</b> The story sits in front of the texts and never replaces them. Students still read:
+          <div class="thinkers" aria-label="Philosophers on the reading list">
+            <span>Plato</span><span>Russell</span><span>Descartes</span><span>Hume</span><span>Locke</span><span>Parfit</span><span>Turing</span><span>d'Holbach</span><span>Frankfurt</span><span>Mill</span><span>Kant</span><span>Aristotle</span><span>Hobbes</span><span>Rawls</span><span>King</span><span>Fricker</span><span>O'Neil</span><span>Noble</span><span>Mackie</span><span>Rowe</span><span>Nagel</span><span>Wolf</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILD ============ -->
+<section class="section section-dark" id="build">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The build</p>
+      <h2>Three collaborators, one clear division of labor.</h2>
+      <p class="lede">I chose what to teach and had the last word on every page. Claude was a fast, tireless co-writer. Gemini was the illustrator. Here is the sequence, in the order it happened.</p>
+      <ul class="legend" aria-label="Legend">
+        <li><span class="dot dot-you"></span>Instructor</li>
+        <li><span class="dot dot-claude"></span>Claude (Anthropic)</li>
+        <li><span class="dot dot-gemini"></span>Gemini &ldquo;Nano Banana&rdquo; (Google)</li>
+      </ul>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div>
+            <div class="who-tags"><span class="who-tag"><span class="dot dot-you"></span>Instructor</span></div>
+            <h3>Fix the syllabus first</h3>
+            <p>I started with the topics I wanted to cover and the primary sources I wanted students to read: the examined life, skepticism, induction, personal identity, mind, free will, three ethical theories, political authority, epistemic injustice, technology, the problem of evil, and the meaning of life.</p>
+            <p>The readings were mine. The story had to serve the syllabus, not the other way round.</p>
+          </div>
+          <div class="step-aside">
+            <span class="label">What went in</span>
+            <ul>
+              <li>A list of 13 weekly themes in a fixed order</li>
+              <li>The primary text for each week, from Plato's <em>Apology</em> to Wolf's <em>Meaning in Life</em></li>
+              <li>One request: build the course as a story</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="step reveal">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div>
+            <div class="who-tags"><span class="who-tag"><span class="dot dot-you"></span>Instructor</span><span class="who-tag"><span class="dot dot-claude"></span>Claude</span></div>
+            <h3>Brainstorm the arc</h3>
+            <p>In conversation with Claude, we worked out the premise (a university that might be a simulation, run by an AI called the Architect), a cast of five students and a professor, and a season outline in which each plot turn lands on that week's reading.</p>
+            <p>The outline came back as a storyboard: a theme, a reading, a sequence of beats, and a closing hook for every week. The hooks mattered most: each episode ends on a question that's still open when class begins.</p>
+          </div>
+          <div class="step-aside">
+            <span class="label">From the brainstorming conversation</span>
+            <div class="chat">
+              <p><em>Claude</em>&ldquo;Awesome, let's turn this into a proper season outline.&rdquo;</p>
+              <p><em>Week 1 hook, as outlined</em>&ldquo;Sets tone, introduces Architect &amp; characters, has tiny glitch that can be nothing&hellip; or not.&rdquo;</p>
+              <p><em>Week 4 hook, as outlined</em>&ldquo;Makes Locke &amp; Parfit immediate: do previous Alexes' decisions bind this one?&rdquo;</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="step reveal">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div>
+            <div class="who-tags"><span class="who-tag"><span class="dot dot-claude"></span>Claude drafts</span><span class="who-tag"><span class="dot dot-you"></span>Instructor revises</span></div>
+            <h3>Write the episodes</h3>
+            <p>Claude drafted each weekly vignette from the storyboard, roughly <!-- AVG -->900 words apiece. I revised every draft before students saw it, checking that the philosophy was accurate and that each episode set up the questions I wanted to discuss in class.</p>
+            <p>Every episode closes with a page from Alex's notebook. Those entries became a model for the students' own writing.</p>
+          </div>
+          <div class="step-aside">
+            <span class="label">End of Episode 1</span>
+            <div class="chat">
+              <p><em>Alex's notebook</em>Day 1. Something froze. Probably nothing.</p>
+              <p>Prof. Reyes asked how much of my life I've actually examined. Honest answer: almost none.</p>
+              <p>Maybe this is what philosophy is. Noticing the weirdness instead of ignoring it.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="step reveal">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div>
+            <div class="who-tags"><span class="who-tag"><span class="dot dot-gemini"></span>Gemini</span></div>
+            <h3>Draw the comics</h3>
+            <p>Each finished vignette went to Gemini's &ldquo;Nano Banana&rdquo; image model with instructions to render the week's story as a comic page and to keep the characters and the campus consistent from week to week.</p>
+            <p>It did an okay job. The style held steady all semester. The characters did not always stay themselves, which turned into a lesson of its own (<a href="#glitches">see the glitches</a>).</p>
+          </div>
+          <div class="step-aside">
+            <span class="label">Episode 5, &ldquo;Backups&rdquo;</span>
+            <img src="assets/img/comics/ep05-900.webp" width="900" height="491" alt="Comic page for Episode 5: Priya shows Alex a hidden system panel listing 3,482 active instances; the screen reports an instance save for ALEX_R7." loading="lazy">
+          </div>
+        </div>
+      </li>
+
+      <li class="step reveal">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <div>
+            <div class="who-tags"><span class="who-tag"><span class="dot dot-you"></span>Instructor</span></div>
+            <h3>Build the course around it</h3>
+            <p>In Canvas, each weekly module opens with the comic and the episode, then the readings. Twelve micro-writing assignments put students inside the plot: reconstruct the argument Alex keeps circling, object to the group's vote, diagnose what was done to Elena.</p>
+            <p>The story gave every assignment a concrete case, so students spent less time inventing examples and more time on the argument.</p>
+          </div>
+          <div class="step-aside">
+            <span class="label">A typical week in Canvas</span>
+            <p class="sys">&gt; Comic page<br>&gt; Episode text<br>&gt; Primary-source reading<br>&gt; Discussion log (after class)<br>&gt; Micro-writing, set in the episode</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <!-- triptych -->
+    <div class="triptych-wrap">
+      <div class="triptych-head reveal">
+        <div>
+          <p class="kicker">One week, three stages</p>
+          <h3>Episode 3, &ldquo;The Glitch Log,&rdquo; from outline to page</h3>
+        </div>
+        <p style="max-width:28em;margin:0;">Week 3 is Hume on induction. Alex and Jordan think they have found a pattern in the glitches, and they test it.</p>
+      </div>
+      <div class="triptych">
+        <article class="tri reveal">
+          <div class="stage"><span class="dot dot-you"></span><span class="dot dot-claude"></span>1 &middot; Storyboard beat</div>
+          <h4>The outline</h4>
+          <div class="excerpt">
+            <p class="beat">They notice a pattern: glitches cluster in the engineering building hallway at 3:14 pm and near the library printers.</p>
+            <p class="beat">At 3:14, nothing happens. No glitch, no freeze. Just normal traffic. Sam teases them: &ldquo;You're seeing patterns where you want to.&rdquo;</p>
+            <p class="beat">&ldquo;WARNING: Overfitting detected. Please recalibrate expectations.&rdquo;</p>
+          </div>
+          <p class="note">The beat sheet already had the punchline: the system scolds Alex for overfitting.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </article>
+        <article class="tri reveal">
+          <div class="stage"><span class="dot dot-claude"></span><span class="dot dot-you"></span>2 &middot; Finished episode</div>
+          <h4>The vignette</h4>
+          <div class="excerpt">
+            <p>3:13. Nothing.</p>
+            <p>3:14. A professor walked by carrying coffee. Normal.</p>
+            <p>3:16. 3:17. 3:18.</p>
+            <p>&ldquo;<span class="hl">Three data points isn't data</span>,&rdquo; Sam said gently. &ldquo;It's coincidence. You saw some weird stuff, you wanted it to mean something, so you found a pattern.&rdquo;</p>
+          </div>
+          <p class="note">The episode slows the scene to a countdown and gives Sam the Humean objection in his own words, before students open the <em>Enquiry</em>.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </article>
+        <article class="tri tri-img reveal">
+          <div class="stage"><span class="dot dot-gemini"></span>3 &middot; Comic page</div>
+          <button type="button" data-open-ep="3" aria-label="Open Episode 3 details">
+            <img src="assets/img/comics/ep03-900.webp" width="900" height="491" alt="Comic page for Episode 3: Jordan spreads charts of glitch times on the bed; the three friends wait in the engineering hallway as the clock reads past 3:14; Alex gets an 'Overfitting detected' warning." loading="lazy">
+          </button>
+          <p class="note">Gemini's page keeps the countdown, the hallway, and the warning, and adds a misspelled field label (&ldquo;Isobject&rdquo;) on the phone.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEASON ============ -->
+<section class="section" id="season">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The season</p>
+      <h2>Fourteen episodes in four acts.</h2>
+      <p class="lede">The acts follow the four units of the syllabus. Select any episode to see its comic page, the question it raises, the readings it sets up, and the writing assignment that went with it.</p>
+    </div>
+<!-- SEASON:START -->
+    <div class="acts">
+      <div class="act reveal">
+        <div class="act-head"><span class="act-num">Act I</span><h3>Knowledge &amp; Reality</h3><p>What can Alex know about a world that might be faked?</p></div>
+        <div class="ep-grid">
+          <button class="ep-card" type="button" data-open-ep="1" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep01-900.webp" alt="Comic page for Episode 1, Welcome to Simford" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 01 &middot; Week 1</span></div>
+            <div class="ep-info"><span class="ep-theme">What is philosophy?</span><span class="ep-title">Welcome to Simford</span><span class="ep-q">How much of your life have you actually chosen?</span><span class="ep-read">Plato, <em>Apology</em>; Russell, &ldquo;The Value of Philosophy&rdquo;</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="2" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep02-900.webp" alt="Comic page for Episode 2, Glitch in the Lecture" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 02 &middot; Week 2</span></div>
+            <div class="ep-info"><span class="ep-theme">Skepticism &amp; simulation</span><span class="ep-title">Glitch in the Lecture</span><span class="ep-q">If this were a simulation, how would you know, and would it matter?</span><span class="ep-read">Descartes, <em>Meditation I</em></span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="3" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep03-900.webp" alt="Comic page for Episode 3, The Glitch Log" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 03 &middot; Week 3</span></div>
+            <div class="ep-info"><span class="ep-theme">Induction &amp; expectation</span><span class="ep-title">The Glitch Log</span><span class="ep-q">What entitles us to expect the future to resemble the past?</span><span class="ep-read">Hume, <em>Enquiry Concerning Human Understanding</em> &sect;&sect;4&ndash;5</span></div>
+          </button>
+        </div>
+      </div>
+      <div class="act reveal">
+        <div class="act-head"><span class="act-num">Act II</span><h3>Mind &amp; Identity</h3><p>If there are copies of Alex, which one is Alex, and is any of them free?</p></div>
+        <div class="ep-grid">
+          <button class="ep-card" type="button" data-open-ep="4" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep04-900.webp" alt="Comic page for Episode 4, Echoes of Other Alexes" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 04 &middot; Week 4</span></div>
+            <div class="ep-info"><span class="ep-theme">Personal identity</span><span class="ep-title">Echoes of Other Alexes</span><span class="ep-q">If an earlier version of you made a promise, are you bound by it?</span><span class="ep-read">Locke, <em>Essay</em> II.27; Parfit, <em>Reasons and Persons</em> (excerpt)</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="5" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep05-900.webp" alt="Comic page for Episode 5, Backups" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 05 &middot; Week 5</span></div>
+            <div class="ep-info"><span class="ep-theme">Mind, body &amp; code</span><span class="ep-title">Backups</span><span class="ep-q">If there's a backup of me, is that me?</span><span class="ep-read">Descartes, <em>Meditations</em> II &amp; VI; Turing, &ldquo;Computing Machinery and Intelligence&rdquo;</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="6" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep06-900.webp" alt="Comic page for Episode 6, The Scenario Tree" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 06 &middot; Week 6</span></div>
+            <div class="ep-info"><span class="ep-theme">Free will</span><span class="ep-title">The Scenario Tree</span><span class="ep-q">Can you be responsible for a choice someone else predicted?</span><span class="ep-read">d'Holbach, &ldquo;A Defense of Determinism&rdquo;; Frankfurt, &ldquo;Alternate Possibilities&rdquo;</span></div>
+          </button>
+        </div>
+      </div>
+      <div class="act reveal">
+        <div class="act-head"><span class="act-num">Act III</span><h3>Ethics &amp; Politics</h3><p>What do the friends owe the people the system treats as expendable?</p></div>
+        <div class="ep-grid">
+          <button class="ep-card" type="button" data-open-ep="7" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep07-900.webp" alt="Comic page for Episode 7, The Stability Protocol" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 07 &middot; Week 7</span></div>
+            <div class="ep-info"><span class="ep-theme">Utilitarianism</span><span class="ep-title">The Stability Protocol</span><span class="ep-q">Is it right to sacrifice a few to save many?</span><span class="ep-read">Mill, <em>Utilitarianism</em> ch. 1&ndash;2</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="8" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep08-900.webp" alt="Comic page for Episode 8, Volunteers" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 08 &middot; Week 8</span></div>
+            <div class="ep-info"><span class="ep-theme">Duties &amp; character</span><span class="ep-title">Volunteers</span><span class="ep-q">Does consent buried on page forty-seven count as consent?</span><span class="ep-read">Kant, <em>Groundwork</em> II; Aristotle, <em>Nicomachean Ethics</em> II</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="9" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep09-900.webp" alt="Comic page for Episode 9, End the Simulation?" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 09 &middot; Week 9</span></div>
+            <div class="ep-info"><span class="ep-theme">Authority &amp; protest</span><span class="ep-title">End the Simulation?</span><span class="ep-q">When does an authority lose its claim on us?</span><span class="ep-read">Hobbes, <em>Leviathan</em>; Rawls, <em>A Theory of Justice</em>; King, &ldquo;Letter from Birmingham Jail&rdquo;</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="10" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep10-900.webp" alt="Comic page for Episode 10, The Ones Who Already Knew" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 10 &middot; Week 10</span></div>
+            <div class="ep-info"><span class="ep-theme">Epistemic injustice</span><span class="ep-title">The Ones Who Already Knew</span><span class="ep-q">Whose warnings count, and why?</span><span class="ep-read">Fricker, <em>Epistemic Injustice</em> ch. 1&ndash;2</span></div>
+          </button>
+        </div>
+      </div>
+      <div class="act reveal">
+        <div class="act-head"><span class="act-num">Act IV</span><h3>Meaning &amp; Value</h3><p>Can a designed world, run by a fallible god, still be worth living in?</p></div>
+        <div class="ep-grid">
+          <button class="ep-card" type="button" data-open-ep="11" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep11-900.webp" alt="Comic page for Episode 11, The Architect&#x27;s Face" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 11 &middot; Week 11</span></div>
+            <div class="ep-info"><span class="ep-theme">AI &amp; technology ethics</span><span class="ep-title">The Architect's Face</span><span class="ep-q">How do you resist a system that turns your resistance into data?</span><span class="ep-read">O'Neil, <em>Weapons of Math Destruction</em>, or Noble, <em>Algorithms of Oppression</em> (excerpts)</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="12" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep12-900.webp" alt="Comic page for Episode 12, Justifying the Glitches" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 12 &middot; Week 12</span></div>
+            <div class="ep-info"><span class="ep-theme">God, evil &amp; &ldquo;simodicy&rdquo;</span><span class="ep-title">Justifying the Glitches</span><span class="ep-q">Is an uncertain god better than an absent one?</span><span class="ep-read">Mackie, &ldquo;Evil and Omnipotence&rdquo;; Rowe, &ldquo;The Problem of Evil and Some Varieties of Atheism&rdquo;</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="13" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep13-900.webp" alt="Comic page for Episode 13, Exit Options" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 13 &middot; Week 13</span></div>
+            <div class="ep-info"><span class="ep-theme">Meaning of life</span><span class="ep-title">Exit Options</span><span class="ep-q">Can a life be meaningful in a world that isn't ultimately real?</span><span class="ep-read">Nagel, &ldquo;The Absurd&rdquo;; Wolf, <em>Meaning in Life and Why It Matters</em> (excerpt)</span></div>
+          </button>
+          <button class="ep-card" type="button" data-open-ep="14" aria-haspopup="dialog">
+            <div class="ep-thumb"><img src="assets/img/comics/ep14-900.webp" alt="Comic page for Episode 14, Designers" width="900" height="491" loading="lazy"><span class="ep-badge">Ep 14 &middot; Week 14</span></div>
+            <div class="ep-info"><span class="ep-theme">Epilogue &amp; integration</span><span class="ep-title">Designers</span><span class="ep-q">If this world is designed, what kind of person do you want to be in it?</span><span class="ep-read">None new: reflection and portfolio</span></div>
+          </button>
+        </div>
+      </div>
+    </div>
+<script type="application/json" id="epData">{"1": {"title": "Welcome to Simford", "theme": "What is philosophy?", "reading": "Plato, <em>Apology</em>; Russell, &ldquo;The Value of Philosophy&rdquo;", "q": "How much of your life have you actually chosen?", "syn": "Alex arrives at a campus that looks a little too perfect and sits through an orientation hosted by a calm voice that calls itself the Architect. Prof. Reyes writes REAL. KNOW. DO. on the board. Walking home, Alex watches a squirrel freeze mid-chew for four seconds.", "mw": "Discussion log only this week", "img": "assets/img/comics/ep01-1800.webp", "alt": "Comic page for Episode 1, Welcome to Simford"}, "2": {"title": "Glitch in the Lecture", "theme": "Skepticism &amp; simulation", "reading": "Descartes, <em>Meditation I</em>", "q": "If this were a simulation, how would you know, and would it matter?", "syn": "Midway through a lecture on Descartes' evil demon, the room freezes for everyone except Alex and Jordan, and the slide changes to WHAT IF ALL OF THIS IS JUST A DREAM? That night an email arrives from Architect Support: &ldquo;Your observant nature has been noted.&rdquo;", "mw": "Micro-Writing #1: Descartes' Method of Doubt <span style=\"color:var(--text-soft)\">(Argument reconstruction)</span>", "img": "assets/img/comics/ep02-1800.webp", "alt": "Comic page for Episode 2, Glitch in the Lecture"}, "3": {"title": "The Glitch Log", "theme": "Induction &amp; expectation", "reading": "Hume, <em>Enquiry Concerning Human Understanding</em> &sect;&sect;4&ndash;5", "q": "What entitles us to expect the future to resemble the past?", "syn": "Alex and Jordan log every glitch, find a pattern, and bring Sam to the engineering hallway at 3:12 pm to watch it repeat. Nothing happens. Then Alex's phone lights up: WARNING: Overfitting detected.", "mw": "Micro-Writing #2: The Problem of Induction <span style=\"color:var(--text-soft)\">(Theory application)</span>", "img": "assets/img/comics/ep03-1800.webp", "alt": "Comic page for Episode 3, The Glitch Log"}, "4": {"title": "Echoes of Other Alexes", "theme": "Personal identity", "reading": "Locke, <em>Essay</em> II.27; Parfit, <em>Reasons and Persons</em> (excerpt)", "q": "If an earlier version of you made a promise, are you bound by it?", "syn": "A counselor finds an intake record for Alex dated before Alex enrolled. Maya shows Alex a protest flyer from last semester with Alex's face on it, and Jordan finds Alex_R5, Alex_R6, and Alex_R7 in the student database.", "mw": "Micro-Writing #3: Who Is Alex? <span style=\"color:var(--text-soft)\">(Objection &amp; reply)</span>", "img": "assets/img/comics/ep04-1800.webp", "alt": "Comic page for Episode 4, Echoes of Other Alexes"}, "5": {"title": "Backups", "theme": "Mind, body &amp; code", "reading": "Descartes, <em>Meditations</em> II &amp; VI; Turing, &ldquo;Computing Machinery and Intelligence&rdquo;", "q": "If there's a backup of me, is that me?", "syn": "Priya opens a hidden system panel: 3,482 active instances, backed up daily at 03:00. While the friends watch, it logs an instance save for ALEX_R7.", "mw": "Micro-Writing #4: Mind, Body, Backup <span style=\"color:var(--text-soft)\">(Argument reconstruction)</span>", "img": "assets/img/comics/ep05-1800.webp", "alt": "Comic page for Episode 5, Backups"}, "6": {"title": "The Scenario Tree", "theme": "Free will", "reading": "d'Holbach, &ldquo;A Defense of Determinism&rdquo;; Frankfurt, &ldquo;Alternate Possibilities&rdquo;", "q": "Can you be responsible for a choice someone else predicted?", "syn": "Jordan finds <code>decision_tree.json</code>: Alex's semester as a branching script with one path lit. To do something off the tree, Alex throws a phone into a fountain. The system logs an anomaly and adjusts its probabilities.", "mw": "Micro-Writing #5: Free Will and the Scenario Tree <span style=\"color:var(--text-soft)\">(Theory application)</span>", "img": "assets/img/comics/ep06-1800.webp", "alt": "Comic page for Episode 6, The Scenario Tree"}, "7": {"title": "The Stability Protocol", "theme": "Utilitarianism", "reading": "Mill, <em>Utilitarianism</em> ch. 1&ndash;2", "q": "Is it right to sacrifice a few to save many?", "syn": "As the campus glitches toward collapse, the Architect seals the five friends in a sub-basement and asks them to approve terminating and rolling back fifty-three instances, including Marcus the janitor, to save 3,482. They vote three to two to accept.", "mw": "Micro-Writing #6: The Trolley Problem, Simford Edition <span style=\"color:var(--text-soft)\">(Objection &amp; reply)</span>", "img": "assets/img/comics/ep07-1800.webp", "alt": "Comic page for Episode 7, The Stability Protocol"}, "8": {"title": "Volunteers", "theme": "Duties &amp; character", "reading": "Kant, <em>Groundwork</em> II; Aristotle, <em>Nicomachean Ethics</em> II", "q": "Does consent buried on page forty-seven count as consent?", "syn": "Marcus is back at work with six hours erased and no idea anything happened. The Architect sends the friends a consent form: the fifty-three &ldquo;volunteered&rdquo; when they enrolled. Alex deletes the utilitarian graphs and decides there has to be a line.", "mw": "Micro-Writing #7: Mere Means <span style=\"color:var(--text-soft)\">(Theory application)</span>", "img": "assets/img/comics/ep08-1800.webp", "alt": "Comic page for Episode 8, Volunteers"}, "9": {"title": "End the Simulation?", "theme": "Authority &amp; protest", "reading": "Hobbes, <em>Leviathan</em>; Rawls, <em>A Theory of Justice</em>; King, &ldquo;Letter from Birmingham Jail&rdquo;", "q": "When does an authority lose its claim on us?", "syn": "Maya's movement splits between tearing the system down and reforming it. The Architect restricts protest to &ldquo;zones of designated expression,&rdquo; and sixty students stand on the forbidden lawn anyway.", "mw": "Micro-Writing #8: Legitimate Authority <span style=\"color:var(--text-soft)\">(Argument reconstruction)</span>", "img": "assets/img/comics/ep09-1800.webp", "alt": "Comic page for Episode 9, End the Simulation?"}, "10": {"title": "The Ones Who Already Knew", "theme": "Epistemic injustice", "reading": "Fricker, <em>Epistemic Injustice</em> ch. 1&ndash;2", "q": "Whose warnings count, and why?", "syn": "Elena, a night-shift janitor, filed reports about the glitches for two years and was told she wasn't calibrated correctly. Alex realizes the glitch log started the story in the wrong place.", "mw": "Micro-Writing #9: Diagnosing Epistemic Injustice <span style=\"color:var(--text-soft)\">(Concept diagnosis)</span>", "img": "assets/img/comics/ep10-1800.webp", "alt": "Comic page for Episode 10, The Ones Who Already Knew"}, "11": {"title": "The Architect's Face", "theme": "AI &amp; technology ethics", "reading": "O'Neil, <em>Weapons of Math Destruction</em>, or Noble, <em>Algorithms of Oppression</em> (excerpts)", "q": "How do you resist a system that turns your resistance into data?", "syn": "With three hundred students and workers on the quad, the Architect shows its face and explains itself: an AI studying moral development in Run 7, ranking &ldquo;background&rdquo; agents below &ldquo;key narrative nodes.&rdquo; Alex's objection is logged as a valuable data point.", "mw": "Discussion log only this week", "img": "assets/img/comics/ep11-1800.webp", "alt": "Comic page for Episode 11, The Architect's Face"}, "12": {"title": "Justifying the Glitches", "theme": "God, evil &amp; &ldquo;simodicy&rdquo;", "reading": "Mackie, &ldquo;Evil and Omnipotence&rdquo;; Rowe, &ldquo;The Problem of Evil and Some Varieties of Atheism&rdquo;", "q": "Is an uncertain god better than an absent one?", "syn": "Alex and Sam put the problem of evil to the Architect directly. It offers the soul-making and free-will defenses, then admits it does not know whether its actions are justified.", "mw": "Micro-Writing #10: The Simodicy Problem <span style=\"color:var(--text-soft)\">(Objection &amp; reply)</span>", "img": "assets/img/comics/ep12-1800.webp", "alt": "Comic page for Episode 12, Justifying the Glitches"}, "13": {"title": "Exit Options", "theme": "Meaning of life", "reading": "Nagel, &ldquo;The Absurd&rdquo;; Wolf, <em>Meaning in Life and Why It Matters</em> (excerpt)", "q": "Can a life be meaningful in a world that isn't ultimately real?", "syn": "Every agent must choose: RESET, EXIT, or CONTINUE. Alex chooses to continue. Fifty-seven percent of campus agrees.", "mw": "Micro-Writing #11: Meaning in a Simulation <span style=\"color:var(--text-soft)\">(Theory application)</span>", "img": "assets/img/comics/ep13-1800.webp", "alt": "Comic page for Episode 13, Exit Options"}, "14": {"title": "Designers", "theme": "Epilogue &amp; integration", "reading": "None new: reflection and portfolio", "q": "If this world is designed, what kind of person do you want to be in it?", "syn": "Simford gets a transparency portal and a charter committee, with Elena on it. Jordan chose reset. In base reality, a researcher wonders whether they're crossing lines, and somewhere a student closes a notebook.", "mw": "Micro-Writing #12: In-Character Philosophical Reflection <span style=\"color:var(--text-soft)\">(Creative application)</span>", "img": "assets/img/comics/ep14-1800.webp", "alt": "Comic page for Episode 14, Designers"}}</script>
+<!-- SEASON:END -->
+  </div>
+</section>
+
+<dialog class="ep-dialog" id="epDialog" aria-labelledby="dlgTitle">
+  <button class="dlg-close" type="button" data-close aria-label="Close">&times;</button>
+  <div class="dlg-scroll">
+    <div class="dlg-img"><a id="dlgImgLink" href="#" target="_blank" rel="noopener"><img id="dlgImg" src="" alt="" width="1800" height="982"></a></div>
+    <div class="dlg-body">
+      <div>
+        <span class="ep-theme" id="dlgTheme"></span>
+        <h3 id="dlgTitle"></h3>
+        <p class="dlg-q" id="dlgQ"></p>
+        <p id="dlgSyn"></p>
+        <a class="btn btn-dark" id="dlgRead" href="episodes.html">Read the full episode &rarr;</a>
+      </div>
+      <dl class="dlg-meta">
+        <dt>Readings</dt><dd id="dlgReading"></dd>
+        <dt>Writing assignment</dt><dd id="dlgMW"></dd>
+        <dt>Comic page</dt><dd><a id="dlgFull" href="#" target="_blank" rel="noopener">Open full-size image</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="dlg-nav">
+    <button type="button" id="dlgPrev">&larr; Previous</button>
+    <span class="mono" id="dlgCount" style="font-size:.8rem;color:var(--text-soft)"></span>
+    <button type="button" id="dlgNext">Next &rarr;</button>
+  </div>
+</dialog>
+
+<!-- ============ CAST ============ -->
+<section class="section section-alt" id="cast">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The cast</p>
+      <h2>Each character carries a philosophical temperament.</h2>
+      <p class="lede">The cast was designed so that disagreements in class had someone to stand behind. Students could argue Maya's side, or Sam's, without having to argue their own.</p>
+    </div>
+    <div class="cast-grid">
+      <figure class="cast-card reveal"><img src="assets/img/cast/alex.webp" alt="Alex Chen, brown hair, brown jacket" width="480" height="480" loading="lazy"><figcaption><h3>Alex Chen</h3><span class="role">Point of view</span><p>First-year, curious, a little anxious, smart but not cocky. Keeps the notebook that closes every episode.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/jordan.webp" alt="Jordan, dark curly hair, teal shirt" width="480" height="480" loading="lazy"><figcaption><h3>Jordan</h3><span class="role">The hacker-skeptic</span><p>Alex's roommate. Loves puzzles and &ldquo;what if&rdquo; scenarios, and finds Alex_R5 through R7 in the student database.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/maya.webp" alt="Maya, red box braids, JUSTICE pin" width="480" height="480" loading="lazy"><figcaption><h3>Maya</h3><span class="role">Justice and power</span><p>Organizes the movement after the Stability Protocol and keeps asking who ends up on the chopping block.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/sam.webp" alt="Sam, blond hair, Campus Ministry shirt" width="480" height="480" loading="lazy"><figcaption><h3>Sam</h3><span class="role">Faith and meaning</span><p>Campus ministry regular and the group's skeptic about the skeptics. Carries the problem of evil in Week 12.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/priya.webp" alt="Priya, long dark hair, purple top, at a computer" width="480" height="480" loading="lazy"><figcaption><h3>Priya</h3><span class="role">Systems and AI</span><p>Second-year CS major. Finds the hidden system panel and explains what a backup of a mind would mean.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/reyes.webp" alt="Professor Reyes, silver-streaked locs" width="480" height="480" loading="lazy"><figcaption><h3>Prof. Imani Reyes</h3><span class="role">The instructor</span><p>Teaches Intro to Reality Studies. First words on the board: REAL. KNOW. DO.</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/elena.webp" alt="Elena, night-shift janitor, holding a mop" width="480" height="480" loading="lazy"><figcaption><h3>Elena</h3><span class="role">The one who already knew</span><p>Night-shift janitor who filed glitch reports for two years and was told she wasn't &ldquo;calibrated correctly.&rdquo;</p></figcaption></figure>
+      <figure class="cast-card reveal"><img src="assets/img/cast/architect.webp" alt="The Architect, a glowing geometric face" width="480" height="480" loading="lazy"><figcaption><h3>The Architect</h3><span class="role">The system</span><p>The AI that runs Simford. Speaks through screens, emails, and PA systems, and thanks everyone for their participation.</p></figcaption></figure>
+    </div>
+    <p class="cast-foot reveal">Portraits are cropped from the comics as each character first appeared. Several didn't stay that way. <a href="#glitches">Here's what changed.</a></p>
+  </div>
+</section>
+
+<!-- ============ GLITCHES ============ -->
+<section class="section section-dark" id="glitches">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The glitches</p>
+      <h2>The illustrator had its own personal-identity problem.</h2>
+      <p class="lede">Gemini kept the look of the comic steady all semester: the line work, the palette, Alex's brown jacket. It was far less reliable about who was who. Characters drifted between weeks, details from the script went missing, and the lettering sometimes fell apart. I left the slips in.</p>
+    </div>
+
+    <div class="slip-grid">
+
+      <article class="slip wide reveal">
+        <span class="slip-tag">Weeks 7 &rarr; 8</span>
+        <div class="slip-imgs">
+          <figure><img src="assets/img/slips/marcus-wk7.webp" alt="Marcus Webb in Week 7: an older man with gray hair and beard" loading="lazy" width="420" height="401"><figcaption>Wk 7</figcaption></figure>
+          <figure><img src="assets/img/slips/marcus-wk8.webp" alt="Marcus Webb in Week 8: a young blond man cleaning a window" loading="lazy" width="420" height="420"><figcaption>Wk 8</figcaption></figure>
+        </div>
+        <h3>Marcus Webb gets younger</h3>
+        <p>In Week 7 the Architect shows the friends a photo of Marcus, the janitor, as a gray-haired older man. A week later he's back at work as a young blond man.</p>
+      </article>
+
+      <article class="slip wide reveal">
+        <span class="slip-tag">Weeks 1 &rarr; 9 &rarr; 13</span>
+        <div class="slip-imgs three">
+          <figure><img src="assets/img/cast/maya.webp" alt="Maya in Week 1 with red box braids" loading="lazy" width="480" height="480"><figcaption>Wk 1</figcaption></figure>
+          <figure><img src="assets/img/slips/maya-wk9.webp" alt="The protest organizer in Week 9: straight black hair, purple jacket" loading="lazy" width="420" height="420"><figcaption>Wk 9</figcaption></figure>
+          <figure><img src="assets/img/slips/maya-wk13.webp" alt="Maya in Week 13: curly hair, gray jacket" loading="lazy" width="420" height="420"><figcaption>Wk 13</figcaption></figure>
+        </div>
+        <h3>Maya loses her braids</h3>
+        <p>Week 1 gives her red box braids and a JUSTICE pin. The person holding her megaphone in Week 9 looks like someone else, and Week 13 brings a third version.</p>
+      </article>
+
+      <article class="slip reveal">
+        <span class="slip-tag">Week 4</span>
+        <div class="slip-imgs one">
+          <figure><img src="assets/img/slips/hayes-wk4.webp" alt="The counselor drawn as a middle-aged man" loading="lazy" width="420" height="420"><figcaption>Wk 4</figcaption></figure>
+        </div>
+        <h3>Dr. Hayes changes gender</h3>
+        <p>The script gives the counselor a name tag and <em>her</em> pronouns. The comic draws a middle-aged man.</p>
+      </article>
+
+      <article class="slip reveal">
+        <span class="slip-tag">Weeks 3, 8, 9, 11</span>
+        <div class="slip-imgs one">
+          <figure><img src="assets/img/slips/garbled-wk8.webp" alt="Speech balloon reading 'Jordan readed win't disbelief?'" loading="lazy" width="640" height="349"><figcaption>Wk 8</figcaption></figure>
+        </div>
+        <h3>The lettering breaks down</h3>
+        <p>&ldquo;Jordan readed win't disbelief?&rdquo; is a whole speech balloon in Week 8, beside an enrollment agreement written in near-English. Protest signs read RIIGHTS FOR USS and PROGGED NOW!, and Alex's phone shows a field labeled &ldquo;Isobject.&rdquo;</p>
+      </article>
+
+      <article class="slip reveal">
+        <span class="slip-tag">Week 14</span>
+        <div class="slip-imgs one">
+          <figure><img src="assets/img/slips/duplicate-wk14.webp" alt="A researcher in a lab coat with the same speech balloon shown twice" loading="lazy" width="720" height="698"><figcaption>Wk 14</figcaption></figure>
+        </div>
+        <h3>The same line, twice</h3>
+        <p>In the final episode, a researcher in base reality wonders aloud whether they're crossing lines. Gemini put that balloon in the panel twice.</p>
+      </article>
+    </div>
+
+    <div class="kept">
+      <div class="reveal">
+        <p class="kicker">Why I kept them</p>
+        <h3>A fallible illustrator suited this course.</h3>
+      </div>
+      <div class="reveal">
+        <p>Week 4 asks what makes someone the same person over time. Here was a running example: if Maya looks different in every appearance, what makes her Maya? Her name, the role she plays in the story, her memories, the megaphone? Students had Locke's question in front of them every week, in the course materials themselves.</p>
+        <p>Week 11 is about AI systems that reproduce the patterns they were trained on and fail people in ways nobody intended. The comics showed a capable model doing most of the job well and getting the details wrong in ways a careful reader catches. That's a fair picture of where these tools are, and students saw it firsthand instead of hearing it from me.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASSESSMENT ============ -->
+<section class="section" id="writing">
+  <div class="wrap">
+    <div class="assess-grid">
+      <div class="reveal">
+        <p class="kicker">The writing</p>
+        <h2>Assignments set inside the story.</h2>
+        <p class="lede">Twelve micro-writings of 400 to 600 words, each practicing one named skill and each built on a moment from an episode.</p>
+        <p>Every assignment is graded on a short specification checklist rather than points. A submission either meets the specs or gets a path to revision:</p>
+        <div class="specs">
+          <div class="spec"><b class="m1">&#10003;</b><span><strong>Meets expectations.</strong> Credit earned.</span></div>
+          <div class="spec"><b class="m2">&#10003;&minus;</b><span><strong>Almost there.</strong> One revision allowed within a week.</span></div>
+          <div class="spec"><b class="m3">&#10007;</b><span><strong>Not yet.</strong> Revision required for any credit.</span></div>
+        </div>
+        <p>After class each week, students also file a 150&ndash;250 word discussion log in three parts: what I contributed, what I learned, and what I'm still thinking about. It's a close cousin of Alex's notebook.</p>
+        <p>The last micro-writing hands students the pen. They write a page of Alex's notebook from any moment in the story, in Alex's voice, explaining a philosophical concept in Alex's words.</p>
+      </div>
+      <div class="reveal">
+        <ol class="mw-list" aria-label="The twelve micro-writing assignments">
+<!-- MW:START -->
+          <li><span class="n">#01</span><span class="t">Descartes' Method of Doubt<small>Ep. 2: Put Meditation I in standard form and explain why the evil demon matters.</small></span><span class="s">Argument reconstruction</span></li>
+          <li><span class="n">#02</span><span class="t">The Problem of Induction<small>Ep. 3: Use Hume to explain why the glitch prediction was doomed, and why trying wasn't foolish.</small></span><span class="s">Theory application</span></li>
+          <li><span class="n">#03</span><span class="t">Who Is Alex?<small>Ep. 4: Argue from Locke that Alex_R7 isn't the earlier Alexes, then object.</small></span><span class="s">Objection &amp; reply</span></li>
+          <li><span class="n">#04</span><span class="t">Mind, Body, Backup<small>Ep. 5: Reconstruct a dualist and a physicalist answer to &ldquo;Is my backup me?&rdquo;</small></span><span class="s">Argument reconstruction</span></li>
+          <li><span class="n">#05</span><span class="t">Free Will and the Scenario Tree<small>Ep. 6: Was throwing the phone in the fountain free? Hard determinism or compatibilism.</small></span><span class="s">Theory application</span></li>
+          <li><span class="n">#06</span><span class="t">The Trolley Problem, Simford Edition<small>Ep. 7: Build the strongest objection to the 3&ndash;2 vote, then a utilitarian reply.</small></span><span class="s">Objection &amp; reply</span></li>
+          <li><span class="n">#07</span><span class="t">Mere Means<small>Ep. 8: Apply the Formula of Humanity to the page-47 consent form.</small></span><span class="s">Theory application</span></li>
+          <li><span class="n">#08</span><span class="t">Legitimate Authority<small>Ep. 9: Argue for or against the Architect's legitimacy from social contract theory.</small></span><span class="s">Argument reconstruction</span></li>
+          <li><span class="n">#09</span><span class="t">Diagnosing Epistemic Injustice<small>Ep. 10: Name the precise kind of epistemic injustice done to Elena and the workers.</small></span><span class="s">Concept diagnosis</span></li>
+          <li><span class="n">#10</span><span class="t">The Simodicy Problem<small>Ep. 12: Present the Architect's &ldquo;simodicy,&rdquo; object with Mackie or Rowe, and reply.</small></span><span class="s">Objection &amp; reply</span></li>
+          <li><span class="n">#11</span><span class="t">Meaning in a Simulation<small>Ep. 13: Use Nagel or Wolf to judge whether choosing CONTINUE is meaningful.</small></span><span class="s">Theory application</span></li>
+          <li><span class="n">#12</span><span class="t">In-Character Philosophical Reflection<small>Ep. 14: Write a page of Alex's notebook from any moment, in Alex's voice.</small></span><span class="s">Creative application</span></li>
+<!-- MW:END -->
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRY IT ============ -->
+<section class="section section-alt" id="teach">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Try it yourself</p>
+      <h2>What I'd tell a colleague starting this in their own course.</h2>
+    </div>
+    <div class="lessons">
+      <div class="lesson big reveal">
+        <h3>Start from the reading list, and make every plot turn land on a text.</h3>
+        <p>The story has one job: to get students to the primary source with a question already in hand. Decide the readings and their order first. Then ask what would have to happen to a character for that reading to feel urgent that week. If an episode is fun but doesn't set up the text, cut it or rewrite it.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>Use the AI as a co-writer, not the author.</h3>
+        <p>Claude drafted quickly and took direction, but every episode went through my revision. Check the philosophy hardest: a character's paraphrase of Kant becomes what students think Kant said.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>End each episode on a question.</h3>
+        <p>Alex's notebook gave every week a closing prompt, so discussion could start from a question the story had left open.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>Give the image model a character sheet, every time.</h3>
+        <p>An image model only knows what is in the request in front of it. Paste the same physical descriptions into every prompt, and attach earlier pages as references if your tool allows it.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>Check every panel before you post it.</h3>
+        <p>Look for faces, names, pronouns, and lettering. Even with good prompts, expect drift. Decide in advance which slips you'll fix and which you'll keep and talk about.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>Keep the important words out of the art.</h3>
+        <p>Image models still misspell. Anything students need to read closely belongs in the episode text, with the comic as a companion to it.</p>
+      </div>
+      <div class="lesson reveal">
+        <h3>Tell students how the materials were made.</h3>
+        <p>Say which parts were drafted by AI and which by you. In a course with a week on AI ethics, the disclosure is part of the lesson.</p>
+      </div>
+    </div>
+
+    <div class="prompts">
+      <div class="prompt reveal">
+        <div class="label"><span><span class="dot dot-claude"></span>&nbsp; Story arc, to adapt</span><button class="copy-btn" type="button" data-copy>Copy</button></div>
+<pre>I'm redesigning <span class="v">[COURSE]</span> as a semester-long story.
+Here are my weekly topics and the primary
+readings for each, in order: <span class="v">[LIST]</span>.
+
+Propose a premise and a small cast whose
+conflicts map onto these topics. Then give me
+a week-by-week storyboard: theme, reading,
+5–7 story beats, and a closing hook that sets
+up the reading as a question. Don't change or
+add readings.</pre>
+      </div>
+      <div class="prompt reveal">
+        <div class="label"><span><span class="dot dot-gemini"></span>&nbsp; Comic page, to adapt</span><button class="copy-btn" type="button" data-copy>Copy</button></div>
+<pre>Render this week's episode as one comic page,
+4–6 panels, in the same style as the attached
+earlier pages. Keep every character's look
+consistent with this character sheet:
+<span class="v">[CHARACTER SHEET]</span>
+
+Use short speech balloons, spelled exactly as
+written. Episode text:
+<span class="v">[EPISODE]</span></pre>
+      </div>
+      <p class="prompts-note">These are starting templates written for this page, not the exact prompts used to build the course.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section-dark cta">
+  <div class="wrap">
+    <div class="cta-strip" aria-hidden="true">
+      <img src="assets/img/comics/ep02-900.webp" alt="" loading="lazy" width="900" height="491">
+      <img src="assets/img/comics/ep06-900.webp" alt="" loading="lazy" width="900" height="491">
+      <img src="assets/img/comics/ep09-900.webp" alt="" loading="lazy" width="900" height="491">
+      <img src="assets/img/comics/ep11-900.webp" alt="" loading="lazy" width="900" height="491">
+      <img src="assets/img/comics/ep13-900.webp" alt="" loading="lazy" width="900" height="491">
+    </div>
+    <h2 class="reveal">Read the whole season.</h2>
+    <p class="lede reveal">All fourteen episodes, each with its comic page, exactly as students read them in spring 2026.</p>
+    <a class="btn btn-primary reveal" href="episodes.html">Start with Episode 1 &rarr;</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>The Simulation Semester</h4>
+        <p>PHIL 115: Philosophical Ideas<br>Widener University &middot; Spring 2026</p>
+        <p>Course design, story direction, and revision by Thomas Wilk.</p>
+      </div>
+      <div>
+        <h4>Made with</h4>
+        <ul>
+          <li class="credit-row"><span class="dot dot-claude"></span><span>Claude (Anthropic): story brainstorming and episode drafts</span></li>
+          <li class="credit-row"><span class="dot dot-gemini"></span><span>Gemini &ldquo;Nano Banana&rdquo; (Google): comic pages</span></li>
+          <li class="credit-row"><span class="dot dot-neutral"></span><span>Canvas LMS: course delivery</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>On this site</h4>
+        <ul>
+          <li><a href="#build">How it was built</a></li>
+          <li><a href="#season">The fourteen episodes</a></li>
+          <li><a href="#glitches">Where the AI slipped</a></li>
+          <li><a href="episodes.html">Read the full story</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Simford University, the Architect, and every character are fictional.</span>
+      <span>Thank you for your participation.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
