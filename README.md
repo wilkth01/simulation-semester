@@ -35,15 +35,11 @@ Then open http://localhost:8115.
 3. In the repository on GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
 4. After a minute the site is live at `https://YOUR-USERNAME.github.io/simulation-semester/`.
 
-### After the first deploy
+### Custom domain
 
-Social previews (Slack, LinkedIn, etc.) need an absolute image URL. In both HTML files, change
+The site is served at **https://simulation-semester.tomwilk.net**. DNS for tomwilk.net is at Bluehost, which has a CNAME record `simulation-semester` → `wilkth01.github.io`, and the `CNAME` file in this repo tells GitHub Pages to answer for that name. Don't delete the `CNAME` file.
 
-```
-<meta property="og:image" content="assets/img/og-image.jpg">
-```
-
-to the full address, e.g. `https://YOUR-USERNAME.github.io/simulation-semester/assets/img/og-image.jpg`.
+Social-preview tags (`og:image`) in both HTML files use the full custom-domain URL.
 
 ## Editing
 
