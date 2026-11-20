@@ -344,6 +344,9 @@ section { position: relative; }
 .slip-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1rem; }
 .slip-imgs.one { grid-template-columns: 1fr; }
 .slip-imgs.three { grid-template-columns: 1fr 1fr 1fr; }
+.slip-imgs.four { grid-template-columns: repeat(4, 1fr); }
+.slip.full { grid-column: 1 / -1; }
+.slip.full p { max-width: 62em; }
 .slip-imgs figure { margin: 0; position: relative; }
 .slip-imgs img { width: 100%; border-radius: 8px; aspect-ratio: 1; object-fit: cover; }
 .slip-imgs.one img { aspect-ratio: auto; height: 250px; object-fit: contain; background: var(--ink); }
@@ -357,9 +360,10 @@ section { position: relative; }
 @media (max-width: 960px) {
   .slip-grid { grid-template-columns: 1fr 1fr; }
   .slip, .slip.wide { grid-column: span 1; }
+  .slip.full { grid-column: 1 / -1; }
   .kept { grid-template-columns: 1fr; }
 }
-@media (max-width: 620px) { .slip-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .slip-grid { grid-template-columns: 1fr; } .slip-imgs.four { grid-template-columns: 1fr 1fr; } }
 
 /* ---------- assessment ---------- */
 .assess-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
