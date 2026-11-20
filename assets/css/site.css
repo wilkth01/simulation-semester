@@ -481,3 +481,22 @@ section { position: relative; }
   .hero { padding-bottom: 56px; }
   .hero-ctas .btn { justify-content: center; }
 }
+
+/* ---------- student quotes ---------- */
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.quote { margin: 0; background: var(--ink-2); border: 1px solid var(--ink-line); border-radius: var(--radius); padding: 1.5rem 1.5rem 1.3rem; display: flex; flex-direction: column; justify-content: space-between; gap: 1.2rem; }
+.quote blockquote { margin: 0; font-family: var(--f-display); font-size: 1.3rem; line-height: 1.35; font-weight: 500; color: #fff; font-variation-settings: "opsz" 36; }
+.quote blockquote::before { content: "\201C"; color: var(--teal-bright); margin-right: .05em; }
+.quote blockquote::after { content: "\201D"; color: var(--teal-bright); margin-left: .02em; }
+.quote figcaption { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--on-ink-soft); }
+.quote-lead { grid-column: span 2; grid-row: span 2; background: linear-gradient(160deg, var(--ink-3), var(--ink-2)); padding: 2.2rem; }
+.quote-lead blockquote { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.2; font-variation-settings: "opsz" 96; }
+.quote-suggest { grid-column: 1 / -1; border-style: dashed; border-color: rgba(216, 164, 67, .45); background: transparent; }
+.quote-suggest blockquote { font-size: 1.35rem; max-width: 46em; }
+.quote-tag { font-family: var(--f-mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+.quotes-note { margin-top: 1.4rem; font-size: .85rem; }
+@media (max-width: 900px) {
+  .quotes { grid-template-columns: 1fr 1fr; }
+  .quote-lead { grid-column: 1 / -1; grid-row: auto; }
+}
+@media (max-width: 560px) { .quotes { grid-template-columns: 1fr; } }
